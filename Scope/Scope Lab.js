@@ -30,3 +30,19 @@ show();
 // console.log(functionVar);
 // console.log(functionLet);
 // console.log(functionConst);
+
+{
+  const pi = 3.14;
+  let me = "Let me!";
+  var something = "nothing";
+  console.log(pi, me, something);
+  // pi = 3.1;
+  me = "This is not me!";
+  something = "Less is more.";
+  console.log(pi, me, something);
+}
+
+pi = 3.1;
+me = "I";
+something = "Everything";
+console.log(pi, me, something);
