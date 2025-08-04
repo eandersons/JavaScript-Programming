@@ -1,0 +1,27 @@
+{
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        {
+            "color": "#333",
+            "column": 50
+        },
+        {
+            "color": "#444",
+            "column": 72
+        },
+        {
+            "color": "#555",
+            "column": 80
+        }
+    ],
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "javascript.format.semicolons": "insert",
+    "liveServer.settings.donotShowInfoMsg": false,
+    "php.suggest.basic": false,
+    "security.workspace.trust.enabled": true,
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+}
