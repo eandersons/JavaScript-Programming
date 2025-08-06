@@ -11,6 +11,7 @@ function submitFeedback() {
   const age = document.getElementById("age").value;
   const designation = document.getElementById("designation").value;
   const email = document.getElementById("email").value;
+  const experience = document.getElementById("experience").value;
   const feedbackText = document.getElementById("feedbackText").value;
   const job = document.getElementById("job").value;
   const productType = document.getElementById("productType").value;
@@ -19,6 +20,7 @@ function submitFeedback() {
   document.getElementById("userAge").innerHTML = age;
   document.getElementById("userDesignation").innerHTML = designation;
   document.getElementById("userEmail").innerHTML = email;
+  document.getElementById("userExperience").innerHTML = experience;
   document.getElementById("userFeedback").innerHTML = feedbackText;
   document.getElementById("userJob").innerHTML = job;
   document.getElementById("userName").innerHTML = userName;
