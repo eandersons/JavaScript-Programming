@@ -1,8 +1,25 @@
-const employees = [
-  { id: 1, name: 'John Doe', age: 30, department: 'IT', salary: 50000 },
-  { id: 2, name: 'Alice Smith', age: 28, department: 'HR', salary: 45000 },
-  { id: 3, name: 'Bob Johnson', age: 35, department: 'Finance', salary: 60000 },
-];
+const employees = [{
+  id: 1,
+  name: 'John Doe',
+  age: 30,
+  department: 'IT',
+  salary: 50000,
+  specialization: 'Python'
+}, {
+  id: 2,
+  name: 'Alice Smith',
+  age: 28,
+  department: 'HR',
+  salary: 45000,
+  specialization: 'Humans'
+}, {
+  id: 3,
+  name: 'Bob Johnson',
+  age: 35,
+  department: 'Finance',
+  salary: 60000,
+  specialization: 'Money'
+}];
 
 function calculateTotalSalaries() {
   const totalSalaries = employees
@@ -16,13 +33,19 @@ function displayEmployees(employeesToDisplay = employees) {
     .join('\n');
 }
 
+function displayEmployeesBySpecialization(specialization) {
+  displayEmployees(
+    employees.filter(employee => employee.specialization === specialization)
+  );
+}
+
 function employeesDetails() {
   return document.getElementById('employeesDetails');
 }
 
 function employeeEntry(employee) {
   return `<p>${employee.id}: ${employee.name} - ${employee.department} `
-    + `- €${employee.salary}</p>`;
+    + `- ${employee.specialization} - €${employee.salary}</p>`;
 }
 
 function findEmployeeById(employeeId) {
