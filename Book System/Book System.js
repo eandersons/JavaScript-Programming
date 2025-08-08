@@ -34,6 +34,11 @@ function clearInputs() {
   BookInputs.pages().value = "";
 }
 
+function deleteBook(index) {
+  removeBook(index);
+  showBooks();
+}
+
 function editBook(index) {
   const book = books[index];
   BookInputs.name().value = book.name;
@@ -58,6 +63,7 @@ function showBooks() {
         <p><strong>Description:</strong> ${book.description}</p>
         <p><strong>No. of Pages:</strong> ${book.pages}</p>
         <button onclick="editBook(${index})">Edit</button>
+        <button onclick="deleteBook(${index})">Delete</button>
       `,
     )
     .join("\n");
