@@ -20,13 +20,13 @@ function startTest() {
 function endTest() {
   endTime = new Date().getTime();
   const userInput = ContentElements.userInput();
+  const typedText = userInput.value;
   userInput.readOnly = true;
   let timeElapsed = (endTime - startTime) / 1000;
-  let typedWords = userInput.value
-    .split(/\s+/)
-    .filter((word) => word !== "").length;
+  let typedWords = typedText.split(/\s+/).filter((word) => word !== "").length;
   ContentElements.output().innerHTML = `
     <h2>Typing Test Results:</h2>
+    <p>Total Length: ${typedText.trim().length}</p>
     <p>Words typed: ${typedWords}</p>
     <p>Time elapsed: ${timeElapsed.toFixed(2)} seconds</p>
     <p>Words per Minute (WPM): ${
