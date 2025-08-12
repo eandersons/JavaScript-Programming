@@ -11,6 +11,10 @@ document.getElementById("addTask").addEventListener("click", () => {
     taskInput.focus();
   }
 });
+document.getElementById("clearAll").addEventListener("click", () => {
+  tasks = [];
+  displayTasks();
+});
 document.getElementById("clearCompleted").addEventListener("click", () => {
   tasks = tasks.filter((task) => !task.completed);
   displayTasks();
