@@ -1,0 +1,55 @@
+{
+  "articles": [
+    {
+      "title": "Debian 13 \"trixie\" released",
+      "date": "2025-08-09",
+      "contentParagraphs": [
+        "After 2 years, 1 month, and 30 days of development, the Debian project is proud to present its new stable version 13 (code name \"trixie\").",
+        "\"trixie\" will be supported for the next 5 years thanks to the combined work of the Debian Security team and the Debian Long Term Support team."
+      ],
+      "labels": ["Release", "Debian 13", "trixie", "2025"]
+    },
+    {
+      "title": "DebConf25 closes in Brest and DebConf26 announced",
+      "date": "2025-08-03",
+      "contentParagraphs": [
+        "On Saturday 19 July 2025, the annual Debian Developers and Contributors Conference came to a close.",
+        "Over 443 attendees representing 50 countries from around the world came together for a combined 169 events (including some which took place during the DebCamp) including more than 50 Talks, 39 Short Talks, 5 Discussions, 59 Birds of a Feather sessions (\"BoF\" – informal meeting between developers and users), 10 workshops, and activities in support of furthering our distribution and free software, learning from our mentors and peers, building our community, and having a bit of fun."
+      ],
+      "labels": ["Events", "DebConf", "DebConf25", "2025"]
+    },
+    {
+      "title": "Updated Debian 12: 12.11 released",
+      "date": "2025-05-17",
+      "contentParagraphs": [
+        "The Debian project is pleased to announce the eleventh update of its stable distribution Debian 12 (codename \"bookworm\"). This point release mainly adds corrections for security issues, along with a few adjustments for serious problems. Security advisories have already been published separately and are referenced where available.",
+        "Please note that the point release does not constitute a new version of Debian 12 but only updates some of the packages included. There is no need to throw away old \"bookworm\" media. After installation, packages can be upgraded to the current versions using an up-to-date Debian mirror.",
+        "Those who frequently install updates from security.debian.org won't have to update many packages, and most such updates are included in the point release.",
+        "New installation images will be available soon at the regular locations."
+      ],
+      "labels": ["Update", "Debian 12", "bookworm", "2025"]
+    },
+    {
+      "title": "Updated Debian 12: 12.10 released",
+      "date": "2025-03-15",
+      "contentParagraphs": [
+        "The Debian project is pleased to announce the tenth update of its stable distribution Debian 12 (codename \"bookworm\"). This point release mainly adds corrections for security issues, along with a few adjustments for serious problems. Security advisories have already been published separately and are referenced where available.",
+        "Please note that the point release does not constitute a new version of Debian 12 but only updates some of the packages included. There is no need to throw away old \"bookworm\" media. After installation, packages can be upgraded to the current versions using an up-to-date Debian mirror.",
+        "Those who frequently install updates from security.debian.org won't have to update many packages, and most such updates are included in the point release.",
+        "New installation images will be available soon at the regular locations."
+      ],
+      "labels": ["Update", "Debian 12", "bookworm", "2025"]
+    },
+    {
+      "title": "Updated Debian 12: 12.9 released",
+      "date": "2025-01-11",
+      "contentParagraphs": [
+        "The Debian project is pleased to announce the ninth update of its stable distribution Debian 12 (codename \"bookworm\"). This point release mainly adds corrections for security issues, along with a few adjustments for serious problems. Security advisories have already been published separately and are referenced where available.",
+        "Please note that the point release does not constitute a new version of Debian 12 but only updates some of the packages included. There is no need to throw away old \"bookworm\" media. After installation, packages can be upgraded to the current versions using an up-to-date Debian mirror.",
+        "Those who frequently install updates from security.debian.org won't have to update many packages, and most such updates are included in the point release.",
+        "New installation images will be available soon at the regular locations."
+      ],
+      "labels": ["Update", "Debian 12", "bookworm", "2025"]
+    }
+  ]
+}
