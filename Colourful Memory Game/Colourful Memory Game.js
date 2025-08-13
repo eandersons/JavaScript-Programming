@@ -28,6 +28,19 @@ function checkMatch() {
   }
 
   selectedCards = [];
+
+  if (
+    gameContainer.getElementsByClassName("card").length ===
+    gameContainer.getElementsByClassName("card matched").length
+  ) {
+    clearInterval(gameInterval);
+    alert("You won!");
+    enableStartButton();
+  }
+}
+
+function enableStartButton() {
+  startButton.disabled = false;
 }
 
 function generateCards() {
@@ -99,7 +112,7 @@ function startGameTimer(timeLeft) {
       clearInterval(gameInterval);
       let timeLeft = gameTime;
       alert("Game over!");
-      startButton.disabled = false;
+      enableStartButton();
     }
   }, 1000);
 }
