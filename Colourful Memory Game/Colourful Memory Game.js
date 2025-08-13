@@ -55,7 +55,7 @@ function handleCardClick(event) {
   selectedCards.push(card);
 
   if (selectedCards.length === 2) {
-    setTimeout(checkMatch, 500);
+    setTimeout(checkMatch, 333);
   }
 }
 
