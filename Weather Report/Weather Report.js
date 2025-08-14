@@ -1,10 +1,14 @@
 const weatherInfo = document.getElementById("weatherInfo");
 document.getElementById("weatherForm").addEventListener("submit", (event) => {
   event.preventDefault();
+  const city = document.getElementById("city").value;
   const units = document.getElementById("units").value;
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather` +
-      `?q=${document.getElementById("city").value}` +
+    "https://api.openweathermap.org/data/2.5/weather" +
+      (city
+        ? `?q=${city}`
+        : `?lat=${parseFloat(document.getElementById("latitude").value)}` +
+          `&lon=${parseFloat(document.getElementById("longitude").value)}`) +
       `&units=${units}` +
       `&appid=${document.getElementById("apiKey").value}`,
   )
