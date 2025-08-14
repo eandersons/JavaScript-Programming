@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Report</title>
+  </head>
+  <body>
+    <h1>Weather Report</h1>
+    <form id="weatherForm">
+      <label for="apiKey">Enter OpenWeather API Key:</label>
+      <input type="password" id="apiKey" name="apiKey" /><br />
+      <label for="city">Enter City:</label>
+      <input type="text" id="city" name="city" /><br />
+      <label for="units">Units:</label>
+      <select id="units" name="units">
+        <option value="standard">Standard</option>
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
+      </select>
+      <br />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div id="weatherInfo"></div>
+    <script type="text/javascript" src="./Weather Report.js"></script>
+  </body>
+</html>
